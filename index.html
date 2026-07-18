@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZeroIn VIP Partner Program — Stop selling to a demographic. Start selling to a person.</title>
+<meta name="description" content="It's not a targeting problem — it's a psychology problem. A full creative team builds your growth around how your buyer thinks: strategy, premium video that doesn't look AI-made, funnels and research. Application-only; one or two partners at a time.">
+<!-- Social share preview + favicons -->
+<!-- Set for https://danialsafvat.github.io/VIP-0IN/ . If you later point a custom domain here (e.g. vip.zeroinai.com), update the 3 absolute URLs below. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="ZeroIn VIP Partner Program">
+<meta property="og:description" content="Stop selling to a demographic. Start selling to a person. Application-only; one or two partners at a time.">
+<meta property="og:url" content="https://danialsafvat.github.io/VIP-0IN/">
+<meta property="og:image" content="https://danialsafvat.github.io/VIP-0IN/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ZeroIn VIP Partner Program — Stop selling to a demographic. Start selling to a person.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ZeroIn VIP Partner Program">
+<meta name="twitter:description" content="Stop selling to a demographic. Start selling to a person.">
+<meta name="twitter:image" content="https://danialsafvat.github.io/VIP-0IN/og-image.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0d0d0f; --bg-2:#141414; --panel:#1c1b1f; --panel-2:#222127;
+    --line:rgba(255,255,255,.10); --line-2:rgba(255,255,255,.06);
+    --ink:#f4f4f3; --ink-soft:#c6c6ca; --ink-mute:#7d7d84;
+    --green:#1e855f; --green-bright:#2ea878; --green-deep:#106646;
+    --violet:#3948cc; --violet-soft:#5d6cff; --warn:#caa14a;
+    --radius:14px; --maxw:1140px; --ease:cubic-bezier(.2,.7,.2,1);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{font-size:12px;font-weight:600;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--green-bright);margin:0 0 20px;display:inline-flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--green-bright);opacity:.6}
+  h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+  p{margin:0}
+  .lead{color:var(--ink-soft);font-weight:400}
+  .divider{height:1px;background:var(--line-2);max-width:var(--maxw);margin:0 auto}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;font-size:15px;
+    letter-spacing:.01em;cursor:pointer;border:0;padding:16px 28px;border-radius:999px;
+    transition:transform .25s var(--ease),background .25s var(--ease),box-shadow .25s var(--ease),border-color .25s var(--ease)}
+  .btn-primary{background:var(--green);color:#fff;box-shadow:0 1px 0 rgba(255,255,255,.12) inset,0 14px 34px -12px rgba(30,133,95,.7)}
+  .btn-primary:hover{background:var(--green-bright);transform:translateY(-2px);box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 20px 44px -12px rgba(30,133,95,.85)}
+  .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+  .btn-ghost:hover{border-color:rgba(255,255,255,.4);transform:translateY(-2px)}
+  .btn-arrow{transition:transform .25s var(--ease)}
+  .btn:hover .btn-arrow{transform:translateX(4px)}
+
+  header.nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(140%) blur(14px);
+    background:rgba(13,13,15,.72);border-bottom:1px solid var(--line-2)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.01em}
+  .brand .mark{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,var(--green) 0%,var(--violet) 130%);
+    display:grid;place-items:center;font-size:13px;font-weight:900;color:#fff}
+  .brand .vip{font-size:11px;font-weight:600;letter-spacing:.22em;color:var(--ink-mute);
+    border-left:1px solid var(--line);padding-left:12px;margin-left:2px}
+  .nav-cta{display:flex;align-items:center;gap:8px}
+  .nav-link{font-size:14px;color:var(--ink-soft);padding:9px 6px;display:none}
+  .nav-link:hover{color:var(--ink)}
+  @media(min-width:880px){.nav-link{display:inline}}
+  .nav .btn{padding:11px 20px;font-size:14px}
+
+  /* HERO — psychology reframe */
+  .hero{position:relative;padding:96px 0 80px;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(60% 70% at 78% 8%,rgba(57,72,204,.22),transparent 60%),
+    radial-gradient(50% 55% at 10% 95%,rgba(30,133,95,.20),transparent 62%);pointer-events:none}
+  .hero-grid{position:absolute;inset:0;opacity:.5;pointer-events:none;
+    background-image:linear-gradient(var(--line-2) 1px,transparent 1px),linear-gradient(90deg,var(--line-2) 1px,transparent 1px);
+    background-size:64px 64px;mask-image:radial-gradient(70% 60% at 50% 30%,#000,transparent 80%)}
+  .hero-inner{position:relative}
+  .hero h1{font-size:clamp(30px,4.2vw,44px);max-width:22ch;color:var(--ink-soft)}
+  .hero .reframe{margin-top:34px;font-size:clamp(31px,4.6vw,50px);font-weight:800;letter-spacing:-.02em;line-height:1.08;max-width:18ch;color:var(--ink)}
+  .hero .reframe .accent,.hero .sub .accent{background:linear-gradient(120deg,var(--green-bright),var(--violet-soft));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .sub{font-size:clamp(16.5px,2vw,20px);max-width:52ch;margin-top:22px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;align-items:center}
+  .hero-actions .tiny{font-size:13.5px;color:var(--ink-mute)}
+  .pains{margin-top:36px;max-width:540px;padding:18px 22px 20px;border-radius:16px;background:rgba(196,104,94,.05);border:1px solid rgba(196,104,94,.18);border-left:3px solid rgba(196,104,94,.85)}
+  .pains-label{display:block;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#cf8b81;margin-bottom:13px}
+  .pain-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .pain-list li{position:relative;padding-left:26px;font-size:14.5px;line-height:1.4;color:var(--ink-soft)}
+  .pain-list li::before{content:"✕";position:absolute;left:2px;top:1px;font-size:12px;font-weight:700;color:#c4685e}
+
+  /* HERO — mobile: same content, tighter spacing + corrected type hierarchy */
+  @media(max-width:640px){
+    .hero{padding:44px 0 56px}
+    .hero h1{font-size:26px}
+    .hero .reframe{margin-top:24px;font-size:32px}
+    .hero .sub{margin-top:18px;font-size:16px}
+    .pains{margin-top:26px;padding:16px 18px 18px}
+    .pains-label{margin-bottom:11px}
+    .pain-list{gap:9px}
+    .hero-actions{margin-top:26px;flex-direction:column;align-items:stretch;gap:12px}
+    .hero-actions .btn{width:100%}
+    .hero-actions .tiny{text-align:center;margin-top:2px}
+  }
+
+  /* PROOF — video showcase */
+  .proof{background:linear-gradient(180deg,#0a0a0c,#101013);border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+  .sec{padding:90px 0}
+  .sec-head{max-width:64ch;margin-bottom:46px}
+  .sec-head h2{font-size:clamp(28px,4.2vw,46px);margin-top:6px}
+  .sec-head p{margin-top:18px;font-size:17px;color:var(--ink-soft)}
+  .sec-head .felt{font-size:clamp(26px,4vw,42px);font-weight:800;letter-spacing:-.02em;line-height:1.1;max-width:20ch}
+  .sec-head .felt .accent{color:var(--green-bright)}
+  .proof-grid{display:grid;gap:20px;grid-template-columns:1fr}
+  @media(min-width:760px){.proof-grid{grid-template-columns:repeat(3,1fr)}}
+  .video-card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--bg-2);
+    transition:border-color .3s var(--ease),transform .3s var(--ease)}
+  .video-card:hover{border-color:rgba(46,168,120,.5);transform:translateY(-3px)}
+  .video-frame{position:relative;aspect-ratio:16/9;width:100%;overflow:hidden}
+  .video-frame.g1{background:radial-gradient(120% 120% at 30% 20%,rgba(46,168,120,.34),transparent 60%),linear-gradient(160deg,#13241d,#0e1412)}
+  .video-frame.g2{background:radial-gradient(120% 120% at 70% 25%,rgba(57,72,204,.36),transparent 60%),linear-gradient(160deg,#16161f,#0e0e14)}
+  .video-frame.g3{background:radial-gradient(120% 120% at 50% 15%,rgba(93,108,255,.30),transparent 55%),radial-gradient(120% 120% at 20% 90%,rgba(46,168,120,.26),transparent 60%),linear-gradient(160deg,#141420,#0e0f12)}
+  .video-frame .label{position:absolute;top:14px;left:14px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:#fff;background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.16);padding:6px 11px;border-radius:999px;backdrop-filter:blur(4px)}
+  .play{position:absolute;inset:0;margin:auto;width:64px;height:64px;border-radius:50%;border:1px solid rgba(255,255,255,.4);
+    background:rgba(255,255,255,.10);backdrop-filter:blur(6px);cursor:pointer;display:grid;place-items:center;
+    transition:transform .25s var(--ease),background .25s var(--ease),border-color .25s var(--ease)}
+  .play:hover{transform:scale(1.07);background:var(--green);border-color:var(--green)}
+  .play svg{margin-left:3px}
+  .video-meta{padding:20px 20px 24px}
+  .video-meta h3{font-size:17.5px;letter-spacing:-.01em;margin-bottom:8px}
+  .video-meta p{font-size:14px;color:var(--ink-soft);line-height:1.45}
+  .proof-note{margin-top:28px;font-size:14px;color:var(--ink-mute);max-width:74ch}
+  .proof-note b{color:var(--ink-soft);font-weight:600}
+
+  /* THESIS band — in-group/out-group */
+  .thesis{background:linear-gradient(90deg,rgba(57,72,204,.10),rgba(30,133,95,.10));border-bottom:1px solid var(--line-2)}
+  .thesis-inner{padding:64px 0;text-align:center}
+  .thesis-inner .big{font-size:clamp(26px,4.4vw,46px);font-weight:800;letter-spacing:-.02em;line-height:1.12;max-width:24ch;margin:0 auto}
+  .thesis-inner .big .accent{color:var(--green-bright)}
+  .thesis-inner .small{margin-top:18px;font-size:16px;color:var(--ink-mute)}
+
+  /* SHIFT — heaven/hell */
+  .shift{display:grid;gap:20px;grid-template-columns:1fr}
+  @media(min-width:820px){.shift{grid-template-columns:1fr 1fr}}
+  .shift-card{border:1px solid var(--line);border-radius:18px;padding:32px 30px;position:relative;overflow:hidden}
+  .shift-card.now{background:linear-gradient(180deg,#161213,#120f10)}
+  .shift-card.after{background:linear-gradient(180deg,var(--panel),var(--bg-2));border-color:rgba(46,168,120,.45)}
+  .shift-card .tag{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:18px}
+  .shift-card.now .tag{color:var(--ink-mute)}
+  .shift-card.after .tag{color:var(--green-bright)}
+  .shift-card h3{font-size:22px;margin-bottom:18px;letter-spacing:-.01em}
+  .shift-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
+  .shift-list li{display:flex;gap:12px;font-size:15.5px;color:var(--ink-soft);line-height:1.45}
+  .shift-card.now .shift-list li::before{content:"✕";color:#8a6a6a;font-weight:700;flex:0 0 auto}
+  .shift-card.after .shift-list li::before{content:"";flex:0 0 16px;height:16px;margin-top:3px;border-radius:50%;
+    background:radial-gradient(circle at 50% 45%,var(--green-bright) 0 4px,transparent 5px),rgba(46,168,120,.14);box-shadow:inset 0 0 0 1px rgba(46,168,120,.4)}
+
+  /* WHAT CHANGES — benefit-paired */
+  .change-grid{display:grid;gap:18px;grid-template-columns:1fr}
+  @media(min-width:760px){.change-grid{grid-template-columns:1fr 1fr}}
+  .change-card{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:var(--bg-2);transition:border-color .3s var(--ease),transform .3s var(--ease)}
+  .change-card:hover{border-color:rgba(46,168,120,.5);transform:translateY(-3px)}
+  .change-card .benefit{font-size:19px;font-weight:700;letter-spacing:-.01em;display:flex;gap:12px;align-items:flex-start;line-height:1.25}
+  .change-card .benefit .dot{flex:0 0 9px;width:9px;height:9px;margin-top:7px;border-radius:50%;background:var(--green-bright);box-shadow:0 0 0 4px rgba(46,168,120,.16)}
+  .change-card .pain{margin:14px 0 14px 21px;font-size:14.5px;color:var(--ink-soft)}
+  .change-card .feat{margin-left:21px;font-size:13px;color:var(--ink-mute);border-top:1px solid var(--line-2);padding-top:12px}
+  .change-card .feat b{color:var(--ink-soft);font-weight:600}
+
+  /* MECHANISM */
+  .mech{background:linear-gradient(180deg,#0a0a0c,#101013);border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+  .mech-grid{display:grid;gap:34px;grid-template-columns:1fr;align-items:center}
+  @media(min-width:900px){.mech-grid{grid-template-columns:1.05fr .95fr}}
+  .mech h2{font-size:clamp(26px,3.8vw,40px);max-width:18ch}
+  .mech h2 .accent{color:var(--green-bright)}
+  .mech p.body{margin-top:20px;font-size:16.5px;color:var(--ink-soft);max-width:54ch}
+  .mech .pillars{margin-top:26px;display:flex;flex-direction:column;gap:14px}
+  .mech .pillar{display:flex;gap:12px;font-size:15px;color:var(--ink-soft)}
+  .mech .pillar .dot{flex:0 0 8px;width:8px;height:8px;margin-top:7px;border-radius:50%;background:var(--green-bright)}
+  .mech .pillar b{color:var(--ink);font-weight:600}
+  .mech-aside{border:1px solid var(--line);border-radius:18px;padding:30px;background:radial-gradient(80% 120% at 80% 0%,rgba(57,72,204,.18),transparent 55%),var(--panel)}
+  .mech-aside .q{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:14px}
+  .mech-aside .big{font-size:clamp(20px,2.6vw,26px);font-weight:700;letter-spacing:-.01em;line-height:1.25}
+  .mech-aside .big b{color:var(--green-bright)}
+  .mech-aside p{margin-top:14px;font-size:14.5px;color:var(--ink-soft)}
+
+  /* SUPPORT — direct line wedge */
+  .support-grid{display:grid;gap:16px;grid-template-columns:1fr;margin-top:8px}
+  @media(min-width:760px){.support-grid{grid-template-columns:1fr 1fr}}
+  .support-item{display:flex;gap:13px;border:1px solid var(--line);border-radius:14px;padding:22px 24px;background:var(--bg-2);font-size:15px;color:var(--ink-soft);line-height:1.5}
+  .support-item .dot{flex:0 0 9px;width:9px;height:9px;margin-top:7px;border-radius:50%;background:var(--green-bright);box-shadow:0 0 0 4px rgba(46,168,120,.16)}
+  .support-item b{color:var(--ink);font-weight:600}
+
+  /* FIT */
+  .fit-grid{display:grid;gap:20px;grid-template-columns:1fr}
+  @media(min-width:820px){.fit-grid{grid-template-columns:1fr 1fr}}
+  .fit-card{border:1px solid var(--line);border-radius:18px;padding:30px}
+  .fit-card.yes{background:linear-gradient(180deg,var(--panel),var(--bg-2));border-color:rgba(46,168,120,.4)}
+  .fit-card.no{background:var(--bg-2)}
+  .fit-card .h{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+  .fit-card.yes .h{color:var(--green-bright)}
+  .fit-card.no .h{color:var(--ink-mute)}
+  .fit-card ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:13px}
+  .fit-card li{display:flex;gap:11px;font-size:15px;color:var(--ink-soft);line-height:1.45}
+  .fit-card.yes li::before{content:"✓";color:var(--green-bright);font-weight:800;flex:0 0 auto}
+  .fit-card.no li::before{content:"—";color:var(--ink-mute);font-weight:700;flex:0 0 auto}
+
+  /* WORTH */
+  .worth-rows{margin-top:8px;border-top:1px solid var(--line)}
+  .worth-row{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;padding:24px 4px;border-bottom:1px solid var(--line);transition:background .3s var(--ease)}
+  .worth-row:hover{background:rgba(255,255,255,.015)}
+  .worth-row .desc{max-width:60ch}
+  .worth-row .desc h3{font-size:18px;margin-bottom:6px}
+  .worth-row .desc p{font-size:14px;color:var(--ink-mute)}
+  .worth-row .price{text-align:right;white-space:nowrap}
+  .worth-row .price .label{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:4px}
+  .worth-row .price .fig{font-size:clamp(20px,2.6vw,28px);font-weight:800;letter-spacing:-.02em}
+  .worth-collapse{margin-top:36px;background:linear-gradient(120deg,rgba(30,133,95,.16),rgba(57,72,204,.16));border:1px solid var(--line);border-radius:18px;padding:36px 32px;display:flex;gap:24px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+  .worth-collapse .txt{max-width:60ch}
+  .worth-collapse .txt .big{font-size:clamp(19px,2.4vw,26px);font-weight:700;letter-spacing:-.01em}
+  .worth-collapse .txt .big b{color:var(--green-bright)}
+  .worth-collapse .txt p{margin-top:10px;color:var(--ink-soft);font-size:15px}
+
+  /* WHY NOW band — AI not Google */
+  .band{background:linear-gradient(90deg,rgba(57,72,204,.12),rgba(30,133,95,.12));border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+  .band-inner{padding:30px 0;display:flex;gap:22px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+  .band .t{max-width:74ch}
+  .band .t .k{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--warn);display:block;margin-bottom:8px}
+  .band .t p{font-size:16.5px;color:var(--ink)}
+  .band .t p b{color:var(--green-bright);font-weight:700}
+
+  /* TIERS */
+  .tiers{display:grid;gap:20px;grid-template-columns:1fr;margin-top:8px}
+  @media(min-width:900px){.tiers{grid-template-columns:repeat(3,1fr)}}
+  .tier{border:1px solid var(--line);border-radius:18px;padding:30px 28px;background:var(--bg-2);display:flex;flex-direction:column;position:relative}
+  .tier.feature{border-color:rgba(46,168,120,.55);background:linear-gradient(180deg,var(--panel),var(--bg-2));box-shadow:0 30px 60px -30px rgba(30,133,95,.5)}
+  .tier .badge{position:absolute;top:-12px;left:28px;background:var(--green);color:#fff;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+  .tier .tname{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--green-bright);font-weight:700}
+  .tier .tag{font-size:15px;color:var(--ink-soft);margin-top:10px;min-height:42px}
+  .tier .price-gate{margin:20px 0 4px;font-size:15px;font-weight:600;color:var(--ink)}
+  .tier .price-gate span{display:block;font-size:13px;font-weight:400;color:var(--ink-mute);margin-top:4px}
+  .tier ul{list-style:none;padding:0;margin:22px 0 26px;display:flex;flex-direction:column;gap:11px}
+  .tier li{display:flex;gap:11px;font-size:14.5px;color:var(--ink-soft);line-height:1.45}
+  .tier li::before{content:"";flex:0 0 18px;height:18px;margin-top:2px;border-radius:50%;
+    background:radial-gradient(circle at 50% 45%,var(--green-bright) 0 4px,transparent 5px),rgba(46,168,120,.14);box-shadow:inset 0 0 0 1px rgba(46,168,120,.4)}
+  .tier .inc{font-size:12.5px;color:var(--ink-mute);font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
+  .tier .btn{margin-top:auto;width:100%}
+  .tier-note{margin-top:24px;font-size:13.5px;color:var(--ink-mute);text-align:center;max-width:70ch;margin:24px auto 0}
+
+  /* APPLY */
+  .apply{background:linear-gradient(180deg,#101013,#0a0a0c)}
+  .apply-card{border:1px solid var(--line);border-radius:22px;padding:clamp(34px,5vw,60px);background:radial-gradient(80% 120% at 80% 0%,rgba(57,72,204,.18),transparent 55%),var(--panel);position:relative;overflow:hidden}
+  .apply-card .closer{font-size:clamp(24px,3.6vw,38px);font-weight:800;letter-spacing:-.02em;line-height:1.1;max-width:20ch;margin-bottom:26px}
+  .apply-card .closer .accent{color:var(--green-bright)}
+  .apply-card h2{font-size:clamp(24px,3.4vw,38px);max-width:22ch}
+  .apply-card .lead{margin-top:18px;font-size:17px;max-width:58ch}
+  .apply-card .vision{margin:0 0 26px;font-size:clamp(16.5px,2vw,20px);color:var(--ink);line-height:1.55;max-width:62ch}
+  .apply-card .vision .accent{color:var(--green-bright);font-weight:600}
+  .scarcity{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0 6px}
+  .scarcity .s{flex:1;min-width:200px;border:1px solid var(--line);border-radius:14px;padding:20px;background:rgba(0,0,0,.25)}
+  .scarcity .s .k{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--green-bright);margin-bottom:8px}
+  .scarcity .s p{font-size:14px;color:var(--ink-soft)}
+  .steps{display:grid;gap:16px;grid-template-columns:1fr;margin:34px 0 8px}
+  @media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{border:1px solid var(--line);border-radius:14px;padding:22px;background:rgba(0,0,0,.25)}
+  .step .n{font-size:13px;font-weight:700;color:var(--green-bright);letter-spacing:.1em}
+  .step p{margin-top:10px;font-size:14.5px;color:var(--ink-soft)}
+  .apply-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px;align-items:center}
+  .apply-actions .tiny{font-size:13px;color:var(--ink-mute)}
+
+  footer{border-top:1px solid var(--line-2);padding:48px 0;color:var(--ink-mute);font-size:14px}
+  .foot-inner{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+  .foot-links{display:flex;gap:22px;flex-wrap:wrap}
+  .foot-links a:hover{color:var(--ink)}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+    .btn,.change-card,.shift-card,.video-card,.play,.btn-arrow{transition:none}
+  }
+  :focus-visible{outline:2px solid var(--green-bright);outline-offset:3px;border-radius:6px}
+</style>
+<script async src="https://tally.so/widgets/embed.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="ZeroIn VIP Partner Program">
+      <span class="mark">0</span><span>ZeroIn</span><span class="vip">VIP PARTNER</span>
+    </a>
+    <nav class="nav-cta">
+      <a class="nav-link" href="#work">The work</a>
+      <a class="nav-link" href="#change">What changes</a>
+      <a class="nav-link" href="#fit">Who it's for</a>
+      <a class="nav-link" href="#worth">What it's worth</a>
+      <a class="btn btn-primary" href="#apply">Apply</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-grid"></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow reveal">VIP Partner Program · Application-only · Capped by design</span>
+    <h1 class="reveal">You spent thousands reaching the "right" audience. Almost none of them bought.</h1>
+    <div class="pains reveal">
+      <span class="pains-label">Sound familiar?</span>
+      <ul class="pain-list">
+        <li>You're just guessing what your buyer needs to hear</li>
+        <li>Your message fits everyone and no one</li>
+        <li>Your ads get scrolled past</li>
+        <li>You feel alone in this</li>
+      </ul>
+    </div>
+    <p class="reframe reveal">That's not a targeting problem. It's a <span class="accent">psychology</span> problem.</p>
+    <p class="sub lead reveal">Age, gender, and a postcode never bought anything — a person did. <span class="accent">The Buyer Decode</span> builds your growth around how your buyer actually thinks.</p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-primary" href="#apply">Apply for a partner slot <span class="btn-arrow">→</span></a>
+      <a class="btn btn-ghost" href="#work">See the work</a>
+      <span class="tiny">No pressure. A real conversation about fit first.</span>
+      <span class="tiny" style="flex-basis:100%">One or two partners at a time.</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF — video showcase (proof-led) -->
+<section class="sec proof" id="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Proof, not promises</span>
+      <p class="felt">The ad that makes a stranger stop and think: <span class="accent">how do they know me?</span></p>
+      <p>That feeling is the whole game. Here's what it looks like — three ads we've made, each built on a different principle we bring to a partner's work. Press play. Built by the same engine you'd be hiring.</p>
+    </div>
+
+    <div class="proof-grid">
+      <!-- VIDEO 1 · GOLF · benefit visualization -->
+      <div class="video-card reveal">
+        <!-- To go live: paste your embed URL into data-embed (Wistia/YouTube/Vimeo). Optional: set a real thumbnail with style="background-image:url(...)" on .video-frame -->
+        <div class="video-frame g1" data-embed="https://www.youtube-nocookie.com/embed/UEJVpJQc57o?autoplay=1&rel=0&iv_load_policy=3&playsinline=1">
+          <span class="label">Benefit visualization</span>
+          <button class="play" aria-label="Play the golf spot">
+            <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 12 0 24V0l21 12Z" fill="#fff"/></svg>
+          </button>
+        </div>
+        <div class="video-meta">
+          <h3>Selling the feeling, not the features</h3>
+          <p>A spot that makes you want the outcome — built on what the buyer pictures and the offer they can't refuse, not a list of specs.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO 2 · THE VAULT · storytelling -->
+      <div class="video-card reveal">
+        <div class="video-frame g2" data-embed="https://www.youtube-nocookie.com/embed/vrFBfzeSvKE?autoplay=1&rel=0&iv_load_policy=3&playsinline=1">
+          <span class="label">Storytelling</span>
+          <button class="play" aria-label="Play The Vault">
+            <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 12 0 24V0l21 12Z" fill="#fff"/></svg>
+          </button>
+        </div>
+        <div class="video-meta">
+          <h3>A story you watch to the end</h3>
+          <p>The Vault — a cinematic spot that holds attention through narrative and tension, so the message lands because you wanted to keep watching.</p>
+        </div>
+      </div>
+
+      <!-- VIDEO 3 · THE MAZE · premium animation -->
+      <div class="video-card reveal">
+        <div class="video-frame g3" data-embed="https://www.youtube-nocookie.com/embed/dSyq4xtG6cc?autoplay=1&rel=0&iv_load_policy=3&playsinline=1">
+          <span class="label">Premium animation</span>
+          <button class="play" aria-label="Play The Maze">
+            <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 12 0 24V0l21 12Z" fill="#fff"/></svg>
+          </button>
+        </div>
+        <div class="video-meta">
+          <h3>High-end craft, aimed at one action</h3>
+          <p>The Maze — premium animation and real momentum, every thrill engineered to carry the viewer toward a single, desired outcome.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="proof-note reveal"><b>These are ads we've made.</b> The same team, the same standard, and the same buyer psychology go into every VIP Partner's work — built for your business, your buyer, and your goal.</p>
+  </div>
+</section>
+
+<!-- THESIS band -->
+<section class="thesis">
+  <div class="wrap thesis-inner reveal">
+    <p class="big">Your competitors are targeting a demographic. You'll be targeting <span class="accent">a person</span>.</p>
+    <p class="small">Same product. Same market. A completely different result — because one message is aimed at an age, and the other at a mind that decides.</p>
+  </div>
+</section>
+
+<!-- THE SHIFT -->
+<!-- #proof (reserved) — Verithrive founding-partner proof block lands here once her testimonial arrives: "anatomy of a VIP engagement" frame, the films + the 8-document series. Placement approved; do not delete. -->
+<section class="sec" id="shift">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The shift</span>
+      <h2>Picture the difference.</h2>
+      <p>Imagine staying where you are for another year — versus what it feels like to have this handled. The gap is the whole point.</p>
+    </div>
+    <div class="shift">
+      <div class="shift-card now reveal">
+        <span class="tag">Without it</span>
+        <h3>The guessing keeps costing you.</h3>
+        <ul class="shift-list">
+          <li>You spend, then hope — and find out what didn't work after the money's gone.</li>
+          <li>Your ads look like every other ad in the feed, so they get ignored.</li>
+          <li>You're reaching an age and a postcode, not a person with a real fear and a real want.</li>
+          <li>The work sits on you. There's no team, so it never quite gets done right.</li>
+          <li>A competitor who figures this out first takes the ground you wanted.</li>
+        </ul>
+      </div>
+      <div class="shift-card after reveal">
+        <span class="tag">As a VIP Partner</span>
+        <h3>It's handled — and it performs.</h3>
+        <ul class="shift-list">
+          <li>You open the dashboard and the numbers are finally moving — and for once you know exactly why.</li>
+          <li>Your creative stops the scroll because it looks nothing like the rest.</li>
+          <li>Every asset is built around what your buyer actually wants and fears.</li>
+          <li>You're positioned ahead of the brands still selling to a demographic.</li>
+          <li>And you're never the only one carrying it — a full team is with you the whole way, walking you through every decision.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHAT CHANGES -->
+<section class="sec" id="change">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What changes for you</span>
+      <h2>Outcomes first. The deliverables serve them.</h2>
+      <p>Everything we build exists to move one of these for you. The asset is the means; the change is the point.</p>
+    </div>
+    <div class="change-grid">
+      <div class="change-card reveal">
+        <div class="benefit"><span class="dot"></span>Stop guessing what works before you spend.</div>
+        <p class="pain">No more pouring budget into a message and finding out later it was the wrong one.</p>
+        <div class="feat"><b>How:</b> a complete psychographic marketing strategy built on who your real buyer is and what moves them.</div>
+      </div>
+      <div class="change-card reveal">
+        <div class="benefit"><span class="dot"></span>Ads that don't get scrolled past.</div>
+        <p class="pain">The thing that makes people stop isn't volume or hype — it's creative that looks like nothing else in the feed.</p>
+        <div class="feat"><b>How:</b> strategy-led ad videos that look genuinely premium — not cheap, not obviously AI — and segment-specific static ads.</div>
+      </div>
+      <div class="change-card reveal">
+        <div class="benefit"><span class="dot"></span>Turn attention into qualified leads.</div>
+        <p class="pain">Traffic that doesn't convert is just expensive noise. The gap is usually the offer and the path, not the spend.</p>
+        <div class="feat"><b>How:</b> a high-value lead magnet, funnel architecture, and an ad copy bank engineered to convert.</div>
+      </div>
+      <div class="change-card reveal">
+        <div class="benefit"><span class="dot"></span>Know your buyer better than they know themselves.</div>
+        <p class="pain">Most brands market to a guess. The ones that win name the exact fear the buyer won't say out loud.</p>
+        <div class="feat"><b>How:</b> the Buyer Decode: deep customer, market and competitor research — what they want, their real pain points, and what your rivals are running.</div>
+      </div>
+      <div class="change-card reveal">
+        <div class="benefit"><span class="dot"></span>Stop doing this alone.</div>
+        <p class="pain">Strategy, video, sound, and copy almost never live in one person — so the solo version always ships half-finished.</p>
+        <div class="feat"><b>How:</b> a full creative team — marketing strategists, video directors, sound designers and copywriters, led by a project manager who owns your timeline.</div>
+      </div>
+      <div class="change-card reveal">
+        <div class="benefit"><span class="dot"></span>Be found where buyers now look.</div>
+        <p class="pain">Search behaviour is moving from Google to AI. Most businesses haven't adjusted — that's the opening.</p>
+        <div class="feat"><b>How:</b> positioning and structure so your business surfaces in the places your buyers are actually searching now.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MECHANISM -->
+<section class="sec mech" id="mech">
+  <div class="wrap mech-grid">
+    <div class="reveal">
+      <span class="eyebrow">What makes it work: the Buyer Decode</span>
+      <h2>Anyone can generate AI video. Almost no one builds it on <span class="accent">strategy</span>.</h2>
+      <p class="body">Our videos don't look AI-made. They look premium — and they perform — because every creative choice is decided by marketing strategy and real audience psychology first. The AI is the tool we build with, not the idea. That's the difference between a video people scroll past and one they can't.</p>
+      <div class="pillars">
+        <div class="pillar"><span class="dot"></span><span><b>Marketing-led.</b> Every frame serves a goal, guided by who your buyer really is.</span></div>
+        <div class="pillar"><span class="dot"></span><span><b>Premium quality.</b> Genuinely high-end — no cheap, generic, obviously-AI look.</span></div>
+        <div class="pillar"><span class="dot"></span><span><b>Goal-delivering.</b> Lead gen, engagement, awareness — it hits the objective.</span></div>
+      </div>
+    </div>
+    <div class="mech-aside reveal">
+      <div class="q">The part you can't do alone</div>
+      <div class="big">We find the <b>one thing your buyer won't admit</b> they want — and build everything around it.</div>
+      <p>It's the difference between a list of tactics you could run yourself and a campaign engineered from a truth about your buyer you didn't have. The deliverables are easy to name. The judgment behind them is what you're partnering for.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT — direct line wedge -->
+<section class="sec" id="support">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">How we work with you</span>
+      <h2>A team on a <span class="accent">direct line</span>, not a report in your inbox.</h2>
+      <p>Most done-for-you work ends the same way: a polished deck lands in your inbox, and you're left to figure out the rest. We work the opposite way — you're guided through all of it, by real people you can actually reach.</p>
+    </div>
+    <div class="support-grid reveal">
+      <div class="support-item"><span class="dot"></span><div><b>We talk you through everything.</b> Not just what we built, but the why behind it — so you understand your own marketing, you don't just receive it.</div></div>
+      <div class="support-item"><span class="dot"></span><div><b>Ask us anything, anytime.</b> Real people you can actually reach, not a ticket queue or a quarterly check-in.</div></div>
+      <div class="support-item"><span class="dot"></span><div><b>We show you how it's meant to be run.</b> You're never handed a strategy or a tool and left to guess how to use it.</div></div>
+      <div class="support-item"><span class="dot"></span><div><b>We don't disappear after delivery.</b> A dedicated project manager keeps the whole engagement moving and stays close from day one.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FIT -->
+<section class="sec" id="fit">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">An honest fit check</span>
+      <h2>This isn't for everyone. That's the point.</h2>
+      <p>We take one or two partners at a time, so we're honest up front about who this serves — and who it doesn't.</p>
+    </div>
+    <div class="fit-grid">
+      <div class="fit-card yes reveal">
+        <div class="h">It's a strong fit if you</div>
+        <ul>
+          <li>Have a real product or service and want serious creative behind it.</li>
+          <li>Are already spending on ads, or ready to, and want it to actually work.</li>
+          <li>Care that the work looks premium and is built on strategy, not hype.</li>
+          <li>Want a team to carry it, not another tool to learn.</li>
+        </ul>
+      </div>
+      <div class="fit-card no reveal">
+        <div class="h">It's probably not right if you</div>
+        <ul>
+          <li>Want the cheapest option, or a quick batch of generic AI ads.</li>
+          <li>Are looking for guaranteed overnight results — no honest team promises that.</li>
+          <li>Aren't ready to invest in done-for-you work at this level yet.</li>
+          <li>Would rather do it all yourself — in which case <a id="fitcheck-link" href="https://zeroinai.com/?utm_source=vip_site&utm_medium=fitcheck&utm_campaign=vip" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">the ZeroIn tool</a> may suit you better.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORTH -->
+<section class="sec" id="worth">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What this is worth</span>
+      <h2>Assembled separately, this runs into the hundreds of thousands.</h2>
+      <p>Here's what work of this caliber costs through traditional channels — real, current market rates. As a VIP Partner, you access all of it as one team.</p>
+    </div>
+    <div class="worth-rows reveal">
+      <div class="worth-row">
+        <div class="desc"><h3>Strategy-led ad videos</h3><p>Concept, direction, sound and edit at a production standard built to perform.</p></div>
+        <div class="price"><span class="label">Elsewhere, per video</span><span class="fig">$10K+</span></div>
+      </div>
+      <div class="worth-row">
+        <div class="desc"><h3>Brand &amp; psychographic strategy</h3><p>The audience intelligence and positioning agencies scope as a standalone project.</p></div>
+        <div class="price"><span class="label">Standalone project</span><span class="fig">$15K–$30K</span></div>
+      </div>
+      <div class="worth-row">
+        <div class="desc"><h3>Lead magnet, funnel &amp; research</h3><p>High-value lead assets and funnel build, shaped by deep research into your buyer and competitors.</p></div>
+        <div class="price"><span class="label">Agency scope</span><span class="fig">$20K–$40K</span></div>
+      </div>
+      <div class="worth-row">
+        <div class="desc"><h3>Ongoing campaign management</h3><p>A team actively running and optimizing your campaigns over a full year.</p></div>
+        <div class="price"><span class="label">Retainer / yr</span><span class="fig">$60K+</span></div>
+      </div>
+    </div>
+    <div class="worth-collapse reveal">
+      <div class="txt">
+        <div class="big">One team. <b>One engagement.</b> Founding-partner pricing.</div>
+        <p>We share the number on your call, matched to where your business is right now — not as a price tag before you've seen what it's worth.</p>
+      </div>
+      <a class="btn btn-primary" href="#apply">Apply to talk pricing <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY NOW band -->
+<section class="band">
+  <div class="wrap band-inner">
+    <div class="t">
+      <span class="k reveal">Why now</span>
+      <p class="reveal">The way people find businesses is changing fast — fewer are searching on Google, more are asking AI. <b>The brands that position for that shift now will own it.</b> We don't just use AI to make creative; we understand how to put your business in front of buyers in the place they're actually looking.</p>
+    </div>
+    <a class="btn btn-ghost reveal" href="#apply">Get ahead of it</a>
+  </div>
+</section>
+
+<!-- TIERS -->
+<section class="sec" id="tiers">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Three ways to partner</span>
+      <h2>Scope deepens by tier.</h2>
+      <p>Launch and Full Creative are done-for-you engagements with deployment support. Full Engine is full-service — all hands on deck, with a year of management and optimization. Pricing is shared on your call.</p>
+    </div>
+    <div class="tiers">
+      <div class="tier reveal">
+        <div class="tname">Launch</div>
+        <div class="tag">Focused scope to get strategy and creative moving.</div>
+        <div class="price-gate">Founding-partner pricing<span>Shared on your call</span></div>
+        <div class="inc">Includes</div>
+        <ul>
+          <li>ZeroIn psychographic marketing strategy</li>
+          <li>2 strategy-led ad videos — concept, ideas &amp; scripts</li>
+          <li>Platform access + tokens to generate your own ad copy &amp; images</li>
+        </ul>
+        <a class="btn btn-ghost" href="#apply">Apply</a>
+      </div>
+      <div class="tier feature reveal">
+        <div class="badge">Most chosen</div>
+        <div class="tname">Full Creative</div>
+        <div class="tag">Strategy plus a full lead-gen creative engine.</div>
+        <div class="price-gate">Founding-partner pricing<span>Shared on your call</span></div>
+        <div class="inc">Everything in Launch, plus</div>
+        <ul>
+          <li>6 static ads with per-segment variants</li>
+          <li>High-value lead magnet</li>
+          <li>Messaging directions &amp; funnel concepts</li>
+          <li>Metadata, structure &amp; search basics — fixed site-wide</li>
+          <li>Ad copy bank — headlines &amp; hooks for testing</li>
+          <li>Competitor ad snapshot</li>
+          <li>Deep company + competitor research</li>
+        </ul>
+        <a class="btn btn-primary" href="#apply">Apply <span class="btn-arrow">→</span></a>
+      </div>
+      <div class="tier reveal">
+        <div class="tname">Full Engine</div>
+        <div class="tag">All hands on deck, with a full year of management.</div>
+        <div class="price-gate">Founding-partner pricing<span>Shared on your call</span></div>
+        <div class="inc">Everything in Full Creative, plus</div>
+        <ul>
+          <li>Homepage + landing page updates</li>
+          <li>Built lead magnet funnel</li>
+          <li>Dev team support where needed</li>
+          <li>Dedicated ad-management team</li>
+          <li>1 full year of ongoing optimization</li>
+        </ul>
+        <a class="btn btn-ghost" href="#apply">Apply</a>
+      </div>
+    </div>
+    <p class="tier-note reveal">Full Engine includes a full year of campaign management. If you already have an in-house team or ads partner, we work alongside them.</p>
+  </div>
+</section>
+
+<!-- APPLY -->
+<section class="sec apply" id="apply">
+  <div class="wrap">
+    <div class="apply-card reveal">
+      <p class="closer">Stop selling to a demographic. Start selling to <span class="accent">a person</span>.</p>
+      <p class="vision">Picture a few months from now: the guessing is behind you, a team you trust is running the work, and you're finally watching it land the way you always believed it could — or you're exactly where you are today. <span class="accent">The difference is one conversation.</span></p>
+      <span class="eyebrow">Apply for a partner slot</span>
+      <h2>Application-only. One or two partners at a time.</h2>
+      <p class="lead">We onboard one or two partners at a time, so each gets the team's full attention. That's a real limit, not a marketing line — when the slots are full, new partners join a queue. Founding-partner pricing is the lowest it will ever be; founding partners are the proof we build our reputation on, and once that proof is public, the rates rise.</p>
+      <div class="scarcity">
+        <div class="s"><div class="k">Full attention</div><p>One or two partners at a time means your engagement never competes for the team's focus.</p></div>
+        <div class="s"><div class="k">Selective by design</div><p>We take on work we know we can make undeniable — so we're honest about fit before anyone commits.</p></div>
+        <div class="s"><div class="k">Founding window</div><p>These rates exist for founding partners. They lock in preferred pricing even as ours rises.</p></div>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="n">STEP 1</div><p>Apply and tell us about your business and where it is right now.</p></div>
+        <div class="step"><div class="n">STEP 2</div><p>We have a real conversation about fit — and share pricing matched to your scope.</p></div>
+        <div class="step"><div class="n">STEP 3</div><p>If it's right, we kick off. Your project manager sets the timeline and stays in constant contact.</p></div>
+      </div>
+      <div class="apply-actions">
+        <a class="btn btn-primary" id="apply-cta" href="#tally-open=Y5vEPv&tally-layout=modal&tally-width=550&tally-emoji-animation=none&tally-auto-close=10000&tally-form-events-forwarding=1">Apply now <span class="btn-arrow">→</span></a>
+        <p style="opacity:.55;font-size:.82rem;margin-top:10px">Prefer email? <a href="mailto:hello@zeroinai.com" style="color:inherit;text-decoration:underline">hello@zeroinai.com</a></p>
+        <a class="btn btn-ghost" href="#work">Rewatch the work</a>
+        <span class="tiny">Applying isn't a commitment — it's the start of a conversation. And if the answer is no, that's a fine answer.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div>© 2026 ZeroIn. All rights reserved. ZeroIn — a Binj App Inc. product.</div>
+    <div class="foot-links">
+      <a href="https://landing.zeroinai.com/">Main site</a>
+      <a href="https://landing.zeroinai.com/privacy-policy/">Privacy Policy</a>
+      <a href="https://landing.zeroinai.com/terms-and-conditions/">Terms &amp; Conditions</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // scroll reveal
+  (function(){
+    var els=[].slice.call(document.querySelectorAll('.reveal'));
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+    },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(e,i){e.style.transitionDelay=(Math.min(i%4,3)*55)+'ms';io.observe(e);});
+  })();
+
+  // video embeds — set data-embed on a .video-frame to a YouTube/Vimeo/Wistia URL and the play button injects the iframe
+  (function(){
+    document.querySelectorAll('.video-card .play').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var frame = btn.closest('.video-frame');
+        var url = frame && frame.getAttribute('data-embed');
+        if(!url){ return; } // no embed set yet — placeholder poster stays
+        var iframe = document.createElement('iframe');
+        iframe.src = url;
+        iframe.setAttribute('allow','autoplay; fullscreen; picture-in-picture; encrypted-media');
+        iframe.setAttribute('allowfullscreen','');
+        iframe.title = btn.getAttribute('aria-label') || 'Video';
+        iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;';
+        frame.innerHTML = '';
+        frame.appendChild(iframe);
+      });
+    });
+  })();
+</script>
+<!-- Analytics + form wiring -->
+<script>
+  // === CONFIG: fill this one ===
+  var GA_ID = "G-XXXXXXXXXX";   // paste your GA4 Measurement ID
+
+  if (GA_ID && GA_ID.indexOf("XXXX") === -1) {
+    var s=document.createElement('script');s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];
+    window.gtag=function(){dataLayer.push(arguments);};
+    gtag('js',new Date());gtag('config',GA_ID);
+  } else { window.gtag=function(){}; }
+
+  // Tally popup is handled natively by embed.js via the CTA's data-hash href.
+  // Listen for Tally's forwarded events so GA records real submissions:
+  window.addEventListener('message', function(e){
+    try{
+      var d = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
+      if(d && d.event === 'Tally.FormSubmitted'){ gtag('event','form_submit',{form:'vip_application'}); }
+    }catch(err){}
+  });
+
+  document.querySelectorAll('a[href="#apply"],#apply-cta').forEach(function(el){
+    el.addEventListener('click',function(){gtag('event','apply_click',{location:(el.textContent||'').trim().slice(0,40)});});
+  });
+  document.querySelectorAll('.play').forEach(function(el,i){
+    el.addEventListener('click',function(){gtag('event','video_play',{video_index:i+1});});
+  });
+  var fit=document.getElementById('fitcheck-link');
+  if(fit){fit.addEventListener('click',function(){gtag('event','fitcheck_click');});}
+</script>
+</body>
+</html>
