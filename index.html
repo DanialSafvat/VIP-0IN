@@ -127,6 +127,15 @@
 .cinema-inner iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .cinema-close{position:absolute;top:-44px;right:0;background:none;border:0;color:#f4f4f3;font-size:28px;line-height:1;cursor:pointer;opacity:.8}
 .cinema-close:hover{opacity:1}
+.pf-grid{display:flex;gap:40px;align-items:center;flex-wrap:wrap}
+.pf-quotes{flex:1;min-width:280px}
+.pf-hero{font-size:clamp(21px,2.6vw,30px);line-height:1.4;font-weight:600;color:var(--ink);margin:10px 0 18px}
+.pf-q{color:var(--green-bright)}
+.pf-support{color:var(--ink-soft);font-size:15.5px;line-height:1.65;max-width:58ch;margin:0 0 20px}
+.pf-attrib{color:var(--ink-mute);font-size:14px}
+.pf-attrib b{color:var(--ink)}
+.pf-film{width:min(250px,70vw);margin:0 auto}
+.pf-film .video-frame{aspect-ratio:9/16;border-radius:12px;background:radial-gradient(130% 90% at 50% 18%,rgba(34,160,144,.32),transparent 62%),radial-gradient(120% 100% at 30% 95%,rgba(46,168,120,.20),transparent 60%),linear-gradient(170deg,#12201d,#0d1210)}
   .video-frame.g1{background:radial-gradient(120% 120% at 30% 20%,rgba(46,168,120,.34),transparent 60%),linear-gradient(160deg,#13241d,#0e1412)}
   .video-frame.g2{background:radial-gradient(120% 120% at 70% 25%,rgba(57,72,204,.36),transparent 60%),linear-gradient(160deg,#16161f,#0e0e14)}
   .video-frame.g3{background:radial-gradient(120% 120% at 50% 15%,rgba(93,108,255,.30),transparent 55%),radial-gradient(120% 120% at 20% 90%,rgba(46,168,120,.26),transparent 60%),linear-gradient(160deg,#141420,#0e0f12)}
@@ -405,7 +414,30 @@
 </section>
 
 <!-- THE SHIFT -->
-<!-- #proof (reserved) — Verithrive founding-partner proof block lands here once her testimonial arrives: "anatomy of a VIP engagement" frame, the films + the 8-document series. Placement approved; do not delete. -->
+<!-- PROOF · Verithrive founding-partner block -->
+<section class="sec" id="proof">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Founding partner · A complete engine, delivered</span>
+    </div>
+    <div class="pf-grid reveal">
+      <div class="pf-quotes">
+        <p class="pf-hero"><span class="pf-q">"</span>They didn't just hand me a folder of assets, they built Verithrive an actual marketing engine.<span class="pf-q">"</span></p>
+        <p class="pf-support">"Audience research, positioning, ad creative, lead magnets, even fully scripted films, all landed fast and always with sharper thinking than I'd asked for."</p>
+        <p class="pf-attrib"><b>Katie Fiddaman</b> · Founder, Verithrive</p>
+      </div>
+      <div class="video-card pf-film">
+        <div class="video-frame" data-embed="https://www.youtube-nocookie.com/embed/XuHSOFvWYyE?autoplay=1&rel=0&iv_load_policy=3&playsinline=1&enablejsapi=1">
+          <span class="label">Booked, Not Bought</span>
+          <button class="play" aria-label="Play Booked, Not Bought">
+            <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 12 0 24V0l21 12Z" fill="#fff"/></svg>
+          </button>
+        </div>
+        <div class="video-meta"><b>A Verithrive × ZeroIn film</b></div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="sec" id="shift">
   <div class="wrap">
     <div class="sec-head reveal">
