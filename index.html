@@ -300,6 +300,30 @@
     .btn,.change-card,.shift-card,.video-card,.play,.btn-arrow{transition:none}
   }
   :focus-visible{outline:2px solid var(--green-bright);outline-offset:3px;border-radius:6px}
+.pk-lede{color:#b9b9bf;max-width:62ch;margin-bottom:40px}
+.pk-lede b{color:#f4f4f3;font-weight:600}
+.pk-strip{background:#141416;border:1px solid #26262b;border-radius:16px;padding:20px 24px;margin-bottom:22px}
+.pk-strip .pk-lbl{font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7d7d84;margin-bottom:6px}
+.pk-strip p{color:#b9b9bf;font-size:14.5px;max-width:72ch}
+.pk-strip p b{color:#f4f4f3;font-weight:600}
+.pk-strip ul{list-style:none;columns:2;column-gap:36px;margin:10px 0 0;padding:0}
+.pk-strip ul li{padding:5px 0 5px 22px;position:relative;color:#b9b9bf;font-size:14px;break-inside:avoid}
+.pk-strip ul li::before{content:"";position:absolute;left:2px;top:12px;width:6px;height:6px;border-radius:50%;background:var(--green-bright)}
+.pk-ladder{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch;max-width:900px}
+.pk-card{background:#141416;border:1px solid #26262b;border-radius:16px;padding:26px 24px;display:flex;flex-direction:column;position:relative}
+.pk-card.pk-core{border-color:rgba(46,168,120,.55)}
+.pk-tag{position:absolute;top:-11px;left:24px;background:var(--green-bright);color:#08110d;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:999px}
+.pk-stage{font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7d7d84;margin-bottom:6px}
+.pk-card h3{font-size:21px;font-weight:800;letter-spacing:-.01em;margin:0 0 4px}
+.pk-sub{color:#7d7d84;font-size:13.5px;margin:0 0 16px}
+.pk-plus{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#7d7d84;margin:2px 0 10px}
+.pk-card ul{list-style:none;margin:0 0 16px;padding:0}
+.pk-card li{padding:7px 0 7px 24px;position:relative;color:#b9b9bf;font-size:14.5px;border-bottom:1px dashed rgba(255,255,255,.05)}
+.pk-card li:last-child{border-bottom:0}
+.pk-card li::before{content:"";position:absolute;left:2px;top:14px;width:6px;height:6px;border-radius:50%;background:var(--green-bright)}
+.pk-card li b{color:#f4f4f3;font-weight:600}
+.pk-foot{margin-top:auto;font-size:13px;color:#7d7d84}
+@media(max-width:900px){.pk-ladder{grid-template-columns:1fr}.pk-strip ul{columns:1}}
 </style>
 <script async src="https://tally.so/widgets/embed.js"></script>
 </head>
@@ -596,12 +620,12 @@
     </div>
     <div class="worth-rows reveal">
       <div class="worth-row">
-        <div class="desc"><h3>Strategy-led ad videos</h3><p>Concept, direction, sound and edit at a production standard built to perform.</p></div>
-        <div class="price"><span class="label">Elsewhere, per video</span><span class="fig">$10K+</span></div>
-      </div>
-      <div class="worth-row">
         <div class="desc"><h3>Brand &amp; psychographic strategy</h3><p>The audience intelligence and positioning agencies scope as a standalone project.</p></div>
         <div class="price"><span class="label">Standalone project</span><span class="fig">$15K–$30K</span></div>
+      </div>
+      <div class="worth-row">
+        <div class="desc"><h3>Strategy-led ad videos</h3><p>Concept, direction, sound and edit at a production standard built to perform.</p></div>
+        <div class="price"><span class="label">Elsewhere, per video</span><span class="fig">$10K+</span></div>
       </div>
       <div class="worth-row">
         <div class="desc"><h3>Lead magnet, funnel &amp; research</h3><p>High-value lead assets and funnel build, shaped by deep research into your buyer and competitors.</p></div>
@@ -637,56 +661,55 @@
 <section class="sec" id="tiers">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Three ways to partner</span>
-      <h2>Scope deepens by tier.</h2>
-      <p>Launch and Full Creative are done-for-you engagements with deployment support. Full Engine is full-service — all hands on deck, with a year of management and optimization. Pricing is shared on your call.</p>
+      <span class="eyebrow">What an engagement includes</span>
+      <h2>Diagnose. Build. Run.</h2>
+      <p class="pk-lede">These are the shapes an engagement takes, not a menu. <b>Every offer is built case by case:</b> after your call, you receive one specific package with its exact scope, depth, and price, designed for your business.</p>
     </div>
-    <div class="tiers">
-      <div class="tier reveal">
-        <div class="tname">Launch</div>
-        <div class="tag">Focused scope to get strategy and creative moving.</div>
-        <div class="price-gate">Founding-partner pricing<span>Shared on your call</span></div>
-        <div class="inc">Includes</div>
+
+    <div class="pk-strip reveal">
+      <div class="pk-lbl">Stage one · Diagnose</div>
+      <p><b>Every engagement starts with the Sprint.</b> Diagnosis with solutions built in — its findings decide exactly what your build contains.</p>
+      <ul>
+        <li><b>Buyer Decode</b> research deep-dive</li>
+        <li>The Audience Dossier</li>
+        <li>The Strategy Playbook</li>
+        <li>The Objection Playbook</li>
+        <li>Competitive Intelligence</li>
+        <li>Website Fixes, search and structure</li>
+      </ul>
+    </div>
+
+    <div class="pk-ladder reveal">
+      <div class="pk-card pk-core">
+        <span class="pk-tag">Most chosen</span>
+        <div class="pk-stage">Stage two · Build</div>
+        <h3>The Build</h3>
+        <p class="pk-sub">The Sprint's findings, constructed into assets and solutions.</p>
+        <div class="pk-plus">Everything in the Sprint, plus</div>
         <ul>
-          <li>ZeroIn psychographic marketing strategy</li>
-          <li>2 strategy-led ad videos — concept, ideas &amp; scripts</li>
-          <li>Platform access + tokens to generate your own ad copy &amp; images</li>
+          <li>Ad Copy Bank, headlines and hooks for testing</li>
+          <li>Ad Visual Bank with 6 to 12 produced statics, per-segment variants</li>
+          <li><b>A lead magnet built and customized to your needs</b> — its landing page and funnel designed as one system</li>
+          <li><b>2 to 4 strategy-led films</b>, fully produced, scoped in the diagnosis</li>
         </ul>
-        <a class="btn btn-ghost" href="#apply">Apply</a>
+        <p class="pk-foot">One engagement, one price, the machine constructed.</p>
       </div>
-      <div class="tier feature reveal">
-        <div class="badge">Most chosen</div>
-        <div class="tname">Full Creative</div>
-        <div class="tag">Strategy plus a full lead-gen creative engine.</div>
-        <div class="price-gate">Founding-partner pricing<span>Shared on your call</span></div>
-        <div class="inc">Everything in Launch, plus</div>
+
+      <div class="pk-card">
+        <div class="pk-stage">Stage three · Run</div>
+        <h3>The Run</h3>
+        <p class="pk-sub">Everything built, then implemented, operated, and improved by us.</p>
+        <div class="pk-plus">Everything in the Build, plus</div>
         <ul>
-          <li>6 static ads with per-segment variants</li>
-          <li>High-value lead magnet</li>
-          <li>Messaging directions &amp; funnel concepts</li>
-          <li>Metadata, structure &amp; search basics — fixed site-wide</li>
-          <li>Ad copy bank — headlines &amp; hooks for testing</li>
-          <li>Competitor ad snapshot</li>
-          <li>Deep company + competitor research</li>
+          <li><b>Home page improved</b> — and other key pages where the diagnosis calls for it</li>
+          <li><b>The lead magnet implemented live</b>: landing page up, funnel connected and managed</li>
+          <li><b>Ad accounts set up and run by us</b></li>
+          <li>Continuous A/B testing across ads, pages, and funnels</li>
+          <li>Ongoing optimization and improvement, platform-wide</li>
         </ul>
-        <a class="btn btn-primary" href="#apply">Apply <span class="btn-arrow">→</span></a>
-      </div>
-      <div class="tier reveal">
-        <div class="tname">Full Engine</div>
-        <div class="tag">All hands on deck, with a full year of management.</div>
-        <div class="price-gate">Founding-partner pricing<span>Shared on your call</span></div>
-        <div class="inc">Everything in Full Creative, plus</div>
-        <ul>
-          <li>Homepage + landing page updates</li>
-          <li>Built lead magnet funnel</li>
-          <li>Dev team support where needed</li>
-          <li>Dedicated ad-management team</li>
-          <li>1 full year of ongoing optimization</li>
-        </ul>
-        <a class="btn btn-ghost" href="#apply">Apply</a>
+        <p class="pk-foot">The whole engine, running, with our hands on it. Initial term is the Launch Quarter, then one-time quarter blocks.</p>
       </div>
     </div>
-    <p class="tier-note reveal">Full Engine includes a full year of campaign management. If you already have an in-house team or ads partner, we work alongside them.</p>
   </div>
 </section>
 
